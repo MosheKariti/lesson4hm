@@ -1,0 +1,140 @@
+body {
+    direction: rtl;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+.whatsapp-btn-container {
+    position: fixed;
+    right: 30px;
+    opacity: 0;
+    bottom: -50px;
+    padding: 24px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
+}
+@keyframes fade-up {
+    100% {
+        bottom: 24px;
+        opacity: 1;
+    }
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+    font-size: 48px;
+    color: green;
+    display: inline-block;
+    transition: all 400ms;
+}
+.whatsapp-btn-container .whatsapp-btn:hover {
+    transform: scale(1.2);
+}
+.contact-us {
+    position: absolute;
+    bottom: 0;
+    left: 4px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #075e54;
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover + .contact-us {
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+}
+
+
+.aboutYossi {
+    order: 1;
+    width: 100%;
+    margin: 15px;
+    height: 300px;
+    display: flex;
+}
+
+        .picture {
+            order: 1;
+            flex-basis: 15%;
+            padding-top: 30px;                        
+        }
+        .text {
+            order: 2;
+            flex-basis: 25%;
+            font-size: 25px;
+            text-align: right;
+            padding: 15px;            
+        }
+                .odot {
+                    font-size: 30px;
+                    text-decoration: underline;
+                }
+        .customers {
+            order: 3;
+            flex-basis: 60%;
+            margin-right: 10px;
+            margin-left: 10px;
+            background-color: rgb(200, 174, 101);
+            padding: 15px;
+        }
+                .customersReview {
+                    font-size: 20px;
+                }
+.container {
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    height: 200px;
+    
+}
+.images {
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+        .areaA {
+            flex-basis: 33.3%;
+            order: 1;
+            margin: 3px;
+        }
+        .areaB {
+            flex-basis: 33.3%;
+            order: 2;
+            margin: 3px;
+        }
+        .areaC {
+            flex-basis: 33.3%;
+            order: 3;
+            margin: 3px;
+        }
+
+
+.footer {
+    text-align: center;
+}
+.menu {
+    width: 800px;
+    height: 50px;
+    text-align:center;
+}
+        a {
+            padding: 10px;
+            margin: 10px;
+            font-size: 30px;
+            color: rgb(143, 90, 22);
+            text-decoration: none;
+            font-size: 30px;
+
+        }
+.menu a:hover { 
+    text-decoration:underline;
+    background-color: rgb(227, 192, 139);
+ 
+}
+
+.header {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(19, 11, 0);
+    background-color: rgb(172, 108, 25);
+}
